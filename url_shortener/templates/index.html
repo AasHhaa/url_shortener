@@ -1,4 +1,7 @@
 <form method="POST" action="{{ url_for('short.add_link') }}">
-    <input type="text" name="original_url">
+    <label for="for-url">Url field:</label>
+    <input type="text" id="for-url" name="original_url">
+    <label for="life-time">Lifetime field (Between 1 and 365 days):</label>
+    <input type="text" id="life-time" name="lifetime">
     <input type="submit">
 </form>
